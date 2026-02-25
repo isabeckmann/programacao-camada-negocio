@@ -8,7 +8,7 @@ public class Generics {
                                                   //valor no vetor que futuramente pode causar problema. 
         list.add("ijuí");
         list.add("panambi");
-        list.add(450);
+        //list.add(450);
         
         printData(list);
     }
