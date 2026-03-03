@@ -1,13 +1,13 @@
 package com.acme;
 import java.util.ArrayList;
-public class Grupo {
-    ArrayList<Aluno> data = new ArrayList();
+public class Grupo<T> {
+    ArrayList<T> data = new ArrayList();
     
-    public Aluno get(int i) {
+    public T get(int i) {
         return data.get(i);
     }
     
-    public void add(Aluno a) {
+    public void add(T a) {
         data.add(a);
     }
 }
