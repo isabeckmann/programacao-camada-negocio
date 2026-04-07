@@ -17,6 +17,7 @@ public class DriverManagerSample {
                 
                 doSelect(con);    
                 doUpdate(con);
+                doInsert(con, 99, "john", "ijui");
             }
             
         } catch(SQLException ex) {
@@ -49,15 +50,23 @@ public class DriverManagerSample {
         String SQL = """
                      update APP.PRODUCT 
                          set AVAILABLE = 'TRUE' 
-                         where PRODUCT_ID = 980001 and MANUFACTURER_ID = 19985678;
+                         where PRODUCT_ID = 980001 and MANUFACTURER_ID = 19985678
                      """;
         int r = stmt.executeUpdate(SQL);
         System.out.println("Número de registros afetados: " + r);
         stmt.close();
     }
     
-    private static void doInsert(Connection c, int id, String name, String city) {
+    private static void doInsert(Connection c, int id, String name, String city) throws SQLException {
         
         String SQL = "insert into APP.MY_TABLE(ID, NAME, CITY) VALUES(?,?,?)";
+        PreparedStatement pstmt = c.prepareStatement(SQL);
+        
+        pstmt.setInt(1, id);
+        pstmt.setString(2, name);
+        pstmt.setString(3, city);
+        
+        pstmt.execute();
+        pstmt.close();
     }
 }
