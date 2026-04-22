@@ -1,0 +1,6 @@
+mai 11, 2020 8:59:00 PM br.com.acme.logging.LogLevel main
+SEVERE: Severe log message
+mai 11, 2020 8:59:00 PM br.com.acme.logging.LogLevel main
+WARNING: Warning log message
+mai 11, 2020 8:59:00 PM br.com.acme.logging.LogLevel main
+WARNING: null
