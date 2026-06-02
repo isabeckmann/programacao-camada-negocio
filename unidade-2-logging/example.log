@@ -1,6 +1,28 @@
-mai 11, 2020 8:59:00 PM br.com.acme.logging.LogLevel main
-SEVERE: Severe log message
-mai 11, 2020 8:59:00 PM br.com.acme.logging.LogLevel main
-WARNING: Warning log message
-mai 11, 2020 8:59:00 PM br.com.acme.logging.LogLevel main
-WARNING: null
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-04-22T23:23:49.729383200Z</date>
+  <millis>1776900229729</millis>
+  <nanos>383200</nanos>
+  <sequence>0</sequence>
+  <logger>br.com.acme.logging.FileHandlerLog</logger>
+  <level>INFO</level>
+  <class>br.com.acme.logging.FileHandlerLog</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Testing log system</message>
+</record>
+<record>
+  <date>2026-04-22T23:23:49.759992400Z</date>
+  <millis>1776900229759</millis>
+  <nanos>992400</nanos>
+  <sequence>1</sequence>
+  <logger>br.com.acme.logging.FileHandlerLog</logger>
+  <level>INFO</level>
+  <class>br.com.acme.logging.FileHandlerLog</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>sample log system</message>
+</record>
+</log>

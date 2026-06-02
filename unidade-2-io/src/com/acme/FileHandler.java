@@ -4,6 +4,8 @@ import java.io.*;
 public class FileHandler {
 
     public static void main(String[] args) {
+        configureHandler();
+        
         String content = """
                          Hoje é quarta-feira, dia 22/04/2026. \n
                          Um PÉSSIMO dia para estudar Java! \n
@@ -27,5 +29,9 @@ public class FileHandler {
         out.close();
         bw.close();
         fw.close();
+    }
+    
+    private static void configureHandler() {
+        
     }
 }

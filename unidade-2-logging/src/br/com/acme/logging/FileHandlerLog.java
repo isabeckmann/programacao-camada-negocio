@@ -24,6 +24,8 @@ public class FileHandlerLog {
             
             System.out.println( logger.getHandlers().length) ;
             
+            Handler[] handlers = logger.getHandlers();
+            System.out.println("# of handlers" + handlers.length);            
         } catch (IOException | SecurityException ex) {
             System.out.println(ex);
         }
