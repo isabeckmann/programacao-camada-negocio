@@ -29,11 +29,10 @@ public class ThreadWithExtends {
     public static void main(String[] args) {
         Thread t1 = new Task('O');
         t1.start();
+        t1.setPriority( Thread.MAX_PRIORITY );
         
         Thread t2 = new Task('.');
         t2.start();
-        
+        t2.setPriority( Thread.MIN_PRIORITY );
     }
-
-    
 }
