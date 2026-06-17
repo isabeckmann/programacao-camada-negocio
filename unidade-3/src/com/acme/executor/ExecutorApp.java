@@ -4,7 +4,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ExecutorApp {
-    private static final int NUMBER_OF_THREADS_IN_POOL = 5;
+    // Ao aumentar o número de threads, o tempo diminui
+    // 5 threads = 101.080ms
+    // 15 threads = 34.036ms
+    // 25 threads = 21.023ms
+    // 50 threads = 11.026ms
+    
+    private static final int NUMBER_OF_THREADS_IN_POOL = 50;
     
     public static void main(String[] args) {
         ExecutorService executor = Executors.newFixedThreadPool(NUMBER_OF_THREADS_IN_POOL, new MyThreadFactory());
